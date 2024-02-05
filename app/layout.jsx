@@ -11,6 +11,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/icons/favicon.ico" />
+      </head>
       <body>
         <Provider>
           <div className="main">
