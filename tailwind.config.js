@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +14,8 @@ module.exports = {
       },
       colors: {
         "primary-orange": "#FF5722",
+        light: "#232A3C",
+        dark: "#293245",
       },
     },
   },

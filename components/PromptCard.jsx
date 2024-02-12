@@ -19,7 +19,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   };
 
   return (
-    <div className="prompt_card">
+    <div className="prompt_card dark:bg-[--light]">
       <div className="flex justify-between items-start gap-5">
         <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
           <Image

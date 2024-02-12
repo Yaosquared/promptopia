@@ -14,12 +14,12 @@ const RootLayout = ({ children }) => {
       <head>
         <link rel="icon" href="/assets/icons/favicon.ico" />
       </head>
-      <body>
+      <body className="dark:bg-[--gradient]">
         <Provider>
-          <div className="main">
+          <div className="main dark:hidden">
             <div className="gradient" />
           </div>
-
+          if (theme === "dark") {<div className="gradient" />}
           <main className="app">
             <Nav />
             {children}

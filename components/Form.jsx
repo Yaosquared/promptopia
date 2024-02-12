@@ -6,7 +6,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       <h1 className="head_text text-left">
         <span className="blue_gradient">{type} Post</span>
       </h1>
-      <p className="desc text-left max-w-md">
+      <p className="desc text-left max-w-md dark:text-[--light]">
         {type} and share amazing prompts with the world, and let your
         imagination run wild with any AI-powered platform.
       </p>
@@ -15,7 +15,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
       >
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
+          <span className="font-satoshi font-semibold text-base text-gray-700 dark:text-[--light]">
             Your AI Prompt
           </span>
           <textarea
@@ -29,7 +29,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           />
         </label>
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
+          <span className="font-satoshi font-semibold text-base text-gray-700 dark:text-[--light]">
             Tag {` `}
             <span className="font-normal">
               (#product, #webdevelopment, #idea)
@@ -47,7 +47,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         </label>
 
         <div className="flex-end mx-3 mb-5 gap-4">
-          <Link href="/" className="text-gray-500 text-sm">
+          <Link href="/" className="text-gray-500 text-sm dark:text-[--light]">
             Cancel
           </Link>
 
