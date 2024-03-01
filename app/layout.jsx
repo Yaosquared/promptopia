@@ -19,7 +19,9 @@ const RootLayout = ({ children }) => {
           <div className="main dark:hidden">
             <div className="gradient" />
           </div>
-          if (theme === "dark") {<div className="gradient" />}
+          <div className="hidden">
+            if (theme == "dark") {<div className="gradient" />}
+          </div>
           <main className="app">
             <Nav />
             {children}

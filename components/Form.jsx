@@ -12,7 +12,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       </p>
       <form
         onSubmit={handleSubmit}
-        className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
+        className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism dark:bg-transparent"
       >
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700 dark:text-[--light]">
