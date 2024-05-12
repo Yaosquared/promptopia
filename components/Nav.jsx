@@ -23,7 +23,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
+    <nav className="flex justify-between w-full mb-16 pt-3">
       <Link href="/" className="gap-2 flex-center">
         <Image
           src="/assets/images/logo.svg"
@@ -42,8 +42,6 @@ const Nav = () => {
         <div className="sm:flex hidden">
           {session?.user ? (
             <div className="flex gap-3 md:gap-5">
-              <BackgroundToggle />
-
               <Link href="/create-prompt" className="black_btn">
                 Create Post
               </Link>
@@ -51,6 +49,9 @@ const Nav = () => {
               <button type="button" onClick={signOut} className="black_btn">
                 Sign Out
               </button>
+
+              <BackgroundToggle />
+
               <Link href="/profile">
                 <Image
                   src={session?.user.image}
@@ -64,7 +65,6 @@ const Nav = () => {
           ) : (
             <>
               <div className="flex justify-between gap-5">
-                <BackgroundToggle />
                 <div className="">
                   {providers &&
                     Object.values(providers).map((provider) => (
@@ -78,6 +78,7 @@ const Nav = () => {
                       </button>
                     ))}
                 </div>
+                <BackgroundToggle />
               </div>
             </>
           )}
@@ -87,11 +88,12 @@ const Nav = () => {
         <div className="sm:hidden flex relative">
           {session?.user ? (
             <div className="flex">
+              <BackgroundToggle />
               <Image
                 src={session?.user.image}
                 width={37}
                 height={37}
-                className="rounded-full"
+                className="rounded-full ml-2 cursor-pointer"
                 alt="profile"
                 onClick={() => setToggleDropDown((prev) => !prev)}
               />
@@ -118,7 +120,7 @@ const Nav = () => {
                       setToggleDropDown(false);
                       signOut();
                     }}
-                    className="mt-5 w-full black_btn"
+                    className="mt-5 w-full black_btn dark:text-gray-300 dark:hover:text-gray-200"
                   >
                     Sign Out
                   </button>
@@ -127,6 +129,7 @@ const Nav = () => {
             </div>
           ) : (
             <>
+              <BackgroundToggle />
               {providers &&
                 Object.values(providers).map((provider) => (
                   <button

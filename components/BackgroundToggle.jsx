@@ -32,13 +32,13 @@ const BackgroundToggle = () => {
 
   return (
     <div
-      className="black_btn relative py-2 px-5 flex items-center justify-center border cursor-pointer rounded-full p-1"
+      className="black_btn relative py-2 px-5 flex items-center justify-center cursor-pointer rounded-full p-1"
       onClick={handleClick}
     >
       {darkMode ? (
         <BsSunFill className="text-yellow-400" size={18} />
       ) : (
-        <FaMoon className="text-[--light] hover:text-[--dark]" size={18} />
+        <FaMoon className="text-gray-600" size={18} />
       )}
     </div>
   );

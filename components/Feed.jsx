@@ -76,7 +76,7 @@ const Feed = () => {
           value={searchText}
           onChange={handleSearchChange}
           required
-          className="search_input peer dark:shadow-[--light] dark:shadow-sm dark:focus:border-[--light] dark:bg-[--gray]"
+          className="search_input"
         />
       </form>
 
